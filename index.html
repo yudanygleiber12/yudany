@@ -3,87 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Perfil Profesional</title>
+  <title>Mi Perfil Profesional - Yudany Astudillo</title>
   <style>
     body {
-      background-color: hsl(310, 66%, 53%);
-      color: #e0e0e0;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #222;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: lab(55.93% -5.84 -43.33);
-      padding: 30px 0;
+      background: #2d3e50;
+      color: #fff;
+      padding: 40px 0 20px 0;
       text-align: center;
-      color: #bb86fc;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+      animation: fadeInDown 1s;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      animation: fadeIn 1.2s;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #b0c4de;
+      animation: fadeIn 1.5s;
     }
 
     section {
       max-width: 800px;
-      margin: auto;
+      margin: 30px auto;
       padding: 30px 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(44,62,80,0.07);
+      animation: fadeInUp 1.2s;
     }
 
     h2 {
-      color: hwb(244 7% 29%);
-      border-bottom: 2px solid #bb86fc;
-      padding-bottom: 5px;
+      color: #2d3e50;
+      border-bottom: 2px solid #b0c4de;
+      padding-bottom: 6px;
+      margin-top: 32px;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+      animation: fadeInLeft 1.3s;
     }
 
     .card {
-      background-color: #1815ca;
-      margin: 20px 0;
-      padding: 20px;
-      border-left: 4px solid #bb86fc;
-      box-shadow: 0 0 10px #222;
+      background: #f7f9fb;
+      margin: 18px 0;
+      padding: 18px 22px;
+      border-left: 4px solid #b0c4de;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+      transition: box-shadow 0.3s;
+      animation: fadeIn 1.4s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(44,62,80,0.10);
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #2d3e50;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #0077b6;
     }
 
     footer {
-      background-color: #1a1a1a;
+      background: #2d3e50;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #999;
+      padding: 18px;
+      font-size: 15px;
+      color: #b0c4de;
+      margin-top: 40px;
+      animation: fadeInUp 1.5s;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px);}
+      to { opacity: 1; transform: translateX(0);}
+    }
+    @keyframes fadeIn {
+      from { opacity: 0;}
+      to { opacity: 1;}
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Mi Portafolio
-        yudany astudillo
-    </h1>
-    <p>Apasionada por aprender y mejorar cada</p>
+    <h1>Yudany Astudillo</h1>
+    <p>Portafolio Profesional | Apasionada por el aprendizaje y la innovación</p>
   </header>
 
   <section>
     <h2>Sobre mí</h2>
     <div class="card">
-      <p>Me considero una persona curiosa, un poco conversadora pero con muchas ganas de crecer en el mundo de la programación. Estoy dando mis primeros pasos y me emociona aprender cada día algo nuevo.</p>
+      <p>
+        Soy una persona curiosa, comunicativa y con gran motivación para crecer en el mundo de la tecnología. Estoy iniciando mi carrera en programación y me entusiasma aprender y aportar valor en equipos profesionales.
+      </p>
     </div>
 
     <h2>Habilidades</h2>
     <div class="card">
-      <p>Actualmente tengo conocimientos en <strong>HTML</strong>, y estoy <strong>dispuesto a aprender todos los lenguajes de programación necesarios</strong> para desarrollarme profesionalmente y aportar valor a las empresas.</p>
+      <ul>
+        <li>Conocimientos en <strong>HTML</strong></li>
+        <li>Aprendizaje rápido de nuevos lenguajes y tecnologías</li>
+        <li>Trabajo en equipo y comunicación efectiva</li>
+        <li>Adaptabilidad y pensamiento creativo</li>
+      </ul>
     </div>
 
     <h2>Intereses</h2>
     <div class="card">
       <ul>
-        <li>Desarrollo web</li>
+        <li>Desarrollo web y aplicaciones</li>
         <li>Tecnología e innovación</li>
-        <li>ver kdramas</li>
         <li>Diseño digital</li>
         <li>Aprendizaje constante</li>
+        <li>Cultura y entretenimiento (K-dramas)</li>
       </ul>
     </div>
 
     <h2>Contacto</h2>
     <div class="card">
-      <p>Puedes contactarme por correo: <a href="mailto:tuemail@ejemplo.com" style="color:#bb86fc;">yudany.astudillo.vega@alumnos.sip.cl</a></p>
+      <p>
+        ¿Te gustaría saber más o colaborar? <br>
+        Escríbeme a: <a href="mailto:yudany.astudillo.vega@alumnos.sip.cl">yudany.astudillo.vega@alumnos.sip.cl</a>
+      </p>
     </div>
   </section>
+
+  <footer>
+    &copy; 2025 Yudany Astudillo. Portafolio profesional.
+  </footer>
 </body>
 </html>
